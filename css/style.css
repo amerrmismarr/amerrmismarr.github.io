@@ -25,7 +25,7 @@ html {
 }
 
 .logo img {
-    height: 70px;
+    height: 100px;
 
     /* Adjust the height as needed */
 }
@@ -148,27 +148,67 @@ header .fa-bars {
     /* Ensure the overlay stays within the container */
 }
 
-.darken-image {
+/* Drawer toggle button */
+.drawer-toggle {
+    background-color: transparent;
+    /* Set background color to transparent */
+    border: none;
+    /* Remove border */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    color: #333;
+    /* Text color */
+    font-size: 20px;
+    /* Font size */
+    padding: 10px 15px;
+    /* Padding around text */
+    position: fixed;
+    /* Fixed position */
+    top: 20px;
+    /* Position from the top */
+    right: 20px;
+    /* Position from the right */
+    z-index: 2;
+    /* Ensure button is above drawer */
+}
+
+
+
+
+
+/* Style drawer links */
+.drawer ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.drawer ul li a {
     display: block;
-
-    transition: transform 0.3s ease;
-    /* Smooth zoom transition */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 20px;
 }
 
-.darken-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.drawer ul li a:hover {
+    background-color: #555;
+}
+
+/* Hide drawer by default */
+.drawer {
+    width: 0;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Adjust the alpha channel for darkness */
-    z-index: 1;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* Position on the right side */
+    overflow-x: hidden;
+    transition: 0.3s;
 }
-
-
-
 
 /* Zoom-in effect styles */
 .swiper-slide:hover .darken-image {
@@ -178,19 +218,31 @@ header .fa-bars {
 
 .home .home-slid .box {
     position: relative;
-    overflow: hidden;
+    overflow: scroll;
+    padding: 40px;
+    margin-top: 100px;
 
 
 }
 
+.image {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+
 .home .home-slid .box::before {
     content: "";
-    background: rgba(0, 0, 0, 0.5);
+    background: rgb(255, 255, 255);
     position: absolute;
     bottom: 0;
     top: 0;
     left: 0;
     right: 0;
+
 
 }
 
@@ -240,12 +292,57 @@ header .fa-bars {
     color: var(--th-color);
     font-size: 2rem;
     margin: 2rem 0;
+    text-transform: none;
 }
 
 .about .box .content div {
     color: var(--th-color);
     font-size: 2.2rem;
 }
+
+.services-heading {
+    margin-top: 200px;
+    text-align: center;
+    /* Center the text */
+    font-size: 2em;
+    /* Adjust the value as needed */
+}
+
+.vision-row {
+    display: flex;
+    /* Use Flexbox */
+    justify-content: space-between;
+    /* Distribute items evenly along the row */
+}
+
+.vision-box {
+    flex: 1;
+    /* Allow boxes to grow and take equal space */
+    margin: 0 1rem;
+    /* Add some margin between boxes */
+}
+
+.vision-box img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.vision-box .vision-content {
+    text-align: center;
+    /* Center align text */
+}
+
+.vision-box h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.vision-box p {
+    font-size: 1rem;
+    margin: 0;
+}
+
 
 .services .row {
     display: grid;
@@ -279,27 +376,55 @@ header .fa-bars {
     font-size: 2rem;
 }
 
+.projects-heading {
+    margin-top: 200px;
+    text-align: center;
+    /* Center the text */
+    font-size: 2em;
+
+    /* Adjust the value as needed */
+}
+
 .portfolio .row {
-    display: grid;
+    display: list-item;
     grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
     gap: 1rem;
     margin: 6rem auto;
     width: 90%;
+    text-align: center;
+    /* Position the .row absolutely */
+    position: relative;
+    left: 10%;
+
+
+
+    /* Move the .row to the middle horizontally */
 }
 
 .portfolio .row .box {
     position: relative;
     overflow: hidden;
+    height: 500px;
+    width: 1000px;
+    display: flex;
+    margin: 3rem;
+    /* Add margin around each box */
+
 }
 
 .portfolio .row .box:hover img {
-    transform: translateY(-100%);
+    transform: translateY(0%);
+
 }
 
 .portfolio .row .box img {
+
     height: 100%;
+    /* Set height to 60% of the .box height */
     width: 100%;
+    /* Set width to 80% of the .box width */
     object-fit: cover;
+
 }
 
 .portfolio .row .box:hover .content {
@@ -314,9 +439,14 @@ header .fa-bars {
     text-align: center;
     padding: 3rem 2rem;
     height: 100%;
+    /* Make content height same as box height */
     width: 100%;
+    /* Make content width same as box width */
     transform: translateY(100%);
-    padding-top: 2.5rem;
+    /* Initially move content below the box */
+    transition: transform 0.3s ease;
+    /* Add transition for smooth effect */
+
 }
 
 .portfolio .row .box .content h3 {
@@ -340,7 +470,7 @@ header .fa-bars {
 
 .team .row {
 
-    background: url(../img/background/reviews-bg.jpg);
+    background: url(../img/lr/spanish2.JPG);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -351,14 +481,14 @@ header .fa-bars {
     min-height: 70vh;
 }
 
-.row::before {
-    content: "";
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
+
+
+.team-heading {
+    margin-top: 200px;
+    text-align: center;
+    /* Center the text */
+    font-size: 2em;
+    /* Adjust the value as needed */
 }
 
 .team .row .team-slider .box {
@@ -397,16 +527,57 @@ header .fa-bars {
     font-size: 2.2rem;
 }
 
+.blog-heading {
+    margin-top: 200px;
+    text-align: center;
+    /* Center the text */
+    font-size: 2em;
+    /* Adjust the value as needed */
+}
+
 .blog .row {
+    display: list-item;
+    margin: 5rem;
+    padding-bottom: 5rem;
+    list-style-type: none;
+
+
+
+
+}
+
+.vision .row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
     gap: 2rem;
     margin: 6rem 0;
 }
 
+.vision .row img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.vision .row h3 {
+    color: var(--th-color);
+    font-size: 3rem;
+    margin: 1.5rem 0;
+}
+
+.vision .row p {
+    color: var(--th-color);
+    font-size: 1.9rem;
+    margin: 1rem 0;
+}
+
+
+
+
 .blog .row img {
     width: 100%;
     object-fit: cover;
+
 }
 
 .blog .row h3 {
@@ -417,8 +588,9 @@ header .fa-bars {
 
 .blog .row p {
     color: var(--th-color);
-    font-size: 1.9rem;
-    margin: 1rem 0;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: none;
 }
 
 .welcam {
@@ -432,6 +604,15 @@ header .fa-bars {
     font-size: 3rem;
     padding: 3rem;
     color: var(--min-color);
+}
+
+.contact-heading {
+    margin-top: 200px;
+    text-align: center;
+    /* Center the text */
+    font-size: 2em;
+
+    /* Adjust the value as needed */
 }
 
 .contact .box {
@@ -606,6 +787,11 @@ textarea {
     .about .box .image img {
 
         width: 90%;
+    }
+
+    .services .row {
+
+        grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
     }
 
     .services .row {

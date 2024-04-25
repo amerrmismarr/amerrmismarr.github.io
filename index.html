@@ -34,15 +34,30 @@
     <!-- header  -->
     <header class="header">
         <a href="#home" class="logo"> <img src="img/lr/logo.jpg" alt="Logo"></a>
+        <button class="drawer-toggle" onclick="toggleDrawer()">☰ Menu</button>
 
-        <nav class="navbar">
+        <!-- Drawer Menu -->
+        <div class="drawer">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+
+        <!-- <nav class="navbar">
             <a href="#home">home</a>
             <a href="#team">People</a>
             <a href="#portfolio">Projects</a>
             <a href="#about">Vision</a>
             <a href="#services">Services</a>
             <a href="#blog">Sustainability</a>
-            <a href="#contact">Contact</a>
+            <a href="#contact">Contact</a> -->
 
 
 
@@ -54,6 +69,7 @@
     <!-- /header  -->
     <!-- home  -->
     <div class="home" id="home">
+
         <div class="swiper home-slid">
             <div class="swiper-wrapper">
 
@@ -64,291 +80,31 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide box">
+                <!-- <div class="swiper-slide box">
                     <div class="image darken-container">
                         <img src="img/lr/interior_amman4.png" alt="image" class="darken-image">
 
                     </div>
-                </div>
+                </div> -->
 
-                <div class="swiper-slide box">
+                <!-- <div class="swiper-slide box">
                     <div class="image darken-container">
                         <img src="img/lr/spanish2.JPG" alt="image" class="darken-image">
 
                     </div>
-                </div>
+                </div> -->
 
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            =
         </div>
     </div>
     <!-- /home  -->
-    <!-- team  -->
-    <div class="team" id="team">
-
-        <div class="heading">
-            <h2>our team </h2>
-            <div></div>
-        </div>
-        <div class="row">
-            <div class="swiper team-slider">
-                <div class="swiper-wrapper">
 
 
 
-                    <div class="swiper-slide box">
-                        <div class="content">
-                            <h3>Rana Al-Shahed</h3>
-                            <p>Architect and Partner</p>
-
-                        </div>
-                        <div class="image">
-                            <img src="img/lr/rana.png" alt="image">
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide box">
-                        <div class="content">
-                            <h3>Lina Mehyar</h3>
-                            <p>Architect and Partner</p>
-
-
-                        </div>
-                        <div class="image">
-                            <img src="img/lr/lina.png" alt="image">
-                        </div>
-                    </div>
 
 
 
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- team  -->
-    <!-- portfolio  -->
-    <div class="portfolio" id="portfolio">
-        <div class="heading">
-            <h2>Our Projects</h2>
-            <div></div>
-        </div>
-        <div class="row">
-
-
-            <div class="box">
-                <img src="img/lr/chalet.JPG" alt="image">
-                <div class="content">
-                    <h3>
-                        Chalet
-                    </h3>
-                    <p>Bahhath</p>
-                    <a href="#" class="btn">View</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="img/lr/spanish.JPG" alt="image">
-                <div class="content">
-                    <h3>
-                        Spanish Chalet
-                    </h3>
-                    <p>Qatar</p>
-                    <a href="#" class="btn">View</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="img/lr/corporate.jpg" alt="image">
-                <div class="content">
-                    <h3>
-                        Corporate
-                    </h3>
-                    <p>Qatar </p>
-                    <a href="#" class="btn">View</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="img/lr/bd.jpg" alt="image">
-                <div class="content">
-                    <h3>
-                        Birthday Gala Interior Design
-                    </h3>
-                    <p>Bahrain</p>
-                    <a href="#" class="btn">View</a>
-                </div>
-            </div>
-
-
-            <div class="box">
-                <img src="img/lr/interior_amman.png" alt="image">
-                <div class="content">
-                    <h3>
-                        Interior Design
-                    </h3>
-                    <p>Amman</p>
-                    <a href="#" class="btn">View</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="img/lr/landscape.png" alt="image">
-                <div class="content">
-                    <h3>
-                        Landscape
-                    </h3>
-                    <p>Saudi Arabia</p>
-                    <a href="#" class="btn">View</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="img/lr/mixed.jpg" alt="image">
-                <div class="content">
-                    <h3>
-                        Mixed Use
-                    </h3>
-                    <p>GCC</p>
-                    <a href="#" class="btn">View</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="img/lr/multi.JPG" alt="image">
-                <div class="content">
-                    <h3>
-                        Residential
-                    </h3>
-                    <p>Amman</p>
-                    <a href="#" class="btn">View</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="img/lr/villa.jpg" alt="image">
-                <div class="content">
-                    <h3>
-                        Villa
-                    </h3>
-                    <p>Bahrain</p>
-                    <a href="#" class="btn">View</a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!-- /portfolio  -->
-    <!-- about  -->
-    <section class="about" id="about">
-        <div class="heading">
-            <h2>About LR Architects</h2>
-            <div></div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="img/lr/chalet.JPG" alt="image">
-            </div>
-            <div class="content">
-                <h3>Our Vision</h3>
-                <p></p>
-                <div> </div>
-                <div> </div>
-                <div> </div>
-                <div> </div>
-            </div>
-        </div>
-    </section>
-    <!-- /about  -->
-    <!-- services  -->
-    <section class="services" id="services">
-        <div class="heading">
-            <h2>our services </h2>
-            <div></div>
-        </div>
-
-        <div class="row">
-            <div class="box">
-                <i class="fa-solid fa-home"></i>
-                <h3>
-                    Residential
-                </h3>
-                <p>Residential Text</p>
-            </div>
-
-            <div class="box">
-                <i class="fa-solid fa-building"></i>
-                <h3>
-                    Landscape
-                </h3>
-                <p>Landscape Text</p>
-            </div>
-
-            <div class="box">
-                <i class="fa-solid fa-couch"></i>
-                <h3>
-                    Interior Design
-                </h3>
-                <p>Interior Design Text Text</p>
-            </div>
-
-            <div class="box">
-                <i class="fa-solid fa-tree"></i>
-                <h3>
-                    Sustainable Design
-                </h3>
-                <p>Sustainable Design Text</p>
-            </div>
-
-            <div class="box">
-                <i class="fa-solid fa-business-time"></i>
-                <h3>
-                    Commercial
-                </h3>
-                <p>Commercial Text</p>
-            </div>
-
-            <div class="box">
-                <i class="fa-solid fa-building"></i>
-                <h3>
-                    Corporate
-                </h3>
-                <p>Corporate Text</p>
-            </div>
-        </div>
-    </section>
-    <!-- /services  -->
-
-
-    <!-- .blog  -->
-    <section class="blog" id="blog">
-        <div class="heading">
-            <h2>Sustainability</h2>
-            <div></div>
-        </div>
-        <div class="row">
-            <div class="box">
-                <img src="img/lr/multi1.JPG" alt="image">
-                <h3>Sustainability</h3>
-                <p>Sustainability text</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-
-            <div class="box">
-                <img src="img/lr/lscape.png" alt="image">
-                <h3>Sustainability</h3>
-                <p>Sustainability text</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-
-            <div class="box">
-                <img src="img/lr/lscape1.png" alt="image">
-                <h3>Sustainability</h3>
-                <p>Sustainability text</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-        </div>
-    </section>
-    <!-- blog  -->
     <!-- <div class="welcam">
         <span>welcom to our business company <a href="#" class="btn">start now</a></span>
     </div> -->
@@ -379,7 +135,7 @@
         <div class="row">
             <div class="ifarm">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.46998136828!2d31.367140420131445!3d30.080723581957894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583df81720ed69%3A0xb597301dcb56aacf!2z2YXZiNmEINiz2YrYqtmKINiz2YbYqtixINin2YTZhdin2LjYqQ!5e0!3m2!1sar!2seg!4v1653556459063!5m2!1sar!2seg"
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3383.4398532128976!2d35.78267707563099!3d32.003196973996594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzLCsDAwJzExLjUiTiAzNcKwNDcnMDYuOSJF!5e0!3m2!1sen!2shu!4v1714045770593!5m2!1sen!2shu"
                     width="550" height="430" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -399,16 +155,18 @@
     <footer class="footer">
         <div class="content">
             <h3>LR Architects</h3>
+            <p>Amman Jordan</p>
+            <p>© 2024 LR Architects. ALL RIGHTS RESERVED</p>
             <!-- <p>Text</p> -->
-            <div class="shar">
+            <!-- <div class="shar">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-youtube"></i>
                 <i class="fa-brands fa-twitter"></i>
-            </div>
+            </div> -->
         </div>
 
-        <div class="link">
+        <!-- <div class="link">
             <h3>links</h3>
             <a href="#home">Home</a>
             <a href="#portfolio">Projects</a>
@@ -417,9 +175,9 @@
             <a href="#about">Vision</a>
             <a href="#blog">Sustainability</a>
             <a href="#contact">Contact</a>
-        </div>
+        </div> -->
 
-        <div class="our-servis">
+        <!-- <div class="our-servis">
             <h3>services</h3>
             <a href="#">Residential</a>
             <a href="#">Landscape</a>
@@ -427,7 +185,7 @@
             <a href="#">Sustainable Design</a>
             <a href="#">Commercial</a>
             <a href="#">Corporate</a>
-        </div>
+        </div> -->
 
         <!-- <div class="Ournews">
             <h3>Our Newsletter</h3>
