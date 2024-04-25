@@ -38,21 +38,7 @@ function toggleDrawer() {
     content.style.marginRight = '0';
   }
 }
-document.addEventListener('DOMContentLoaded', function () {
-  const video = document.getElementById('video-splash');
 
-  // Hide video and show main content when the video ends
-  video.addEventListener('ended', function () {
-    video.parentElement.style.display = 'none'; // Hide video container
-    document.querySelector('.content').style.display = 'block'; // Show main content
-  });
-
-  // Optionally, you can add a timeout to automatically hide the video after a certain duration
-  setTimeout(function () {
-    video.parentElement.style.display = 'none'; // Hide video container
-    document.querySelector('.content').style.display = 'block'; // Show main content
-  }, 2000); // Hide video after 10 seconds
-});
 
 
 document.addEventListener('DOMContentLoaded', function () {
